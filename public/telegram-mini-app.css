@@ -1,0 +1,22 @@
+/*
+  Этот файл — только для локального превью в обычном браузере
+  (когда открываешь localhost:3000 не из Telegram).
+  Внутри самого Telegram Mini App использует нативный fullscreen,
+  так что этот класс НЕ подключён глобально в layout.tsx —
+  подключай его вручную на странице предпросмотра при необходимости.
+*/
+.telegram-mini-app-preview {
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.telegram-mini-app-preview > * {
+  max-width: 428px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
